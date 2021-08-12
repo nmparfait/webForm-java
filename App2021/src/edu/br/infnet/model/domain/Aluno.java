@@ -15,26 +15,25 @@ public class Aluno {
 		this.email = email;
 	}
 	
-	
-	@Override
-	public String toString() {
-		
-		return String.format("[%s] O aluno %s tem %d anos; O seu email é (%s). Ele mora na região %s, está inscrito em %d disciplinas e paga R$ %f ! \n", 
-				curso, nome, idade, email, regiao, disciplinas.length, mensalidade);	 
-	}
-
 	public void impressao() {
 		
-			System.out.println(this);
-			
-			System.out.println("Disciplinas:");
-			for (String disc : disciplinas) {
-				System.out.println("-" + disc);
-			}
-			
-			System.out.println("__________________________________");
+		System.out.println(this);
 		
+		System.out.println("Disciplinas:");
+		for (String disc : disciplinas) {
+			System.out.println("-" + disc);
+		}
+		
+		System.out.println("__________________________________");
 	}
+
+	
+	//@Override
+	//public String toString() {
+	//	
+	//	return String.format("[%s] O aluno %s tem %d anos; O seu email é (%s). Ele mora na região %s, está inscrito em %d disciplinas e paga R$ %f ! \n", 
+	//			curso, nome, idade, email, regiao, disciplinas.length, mensalidade);	 
+	//}
 	
 	public String getNome() {
 		return nome;
